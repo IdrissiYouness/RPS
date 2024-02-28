@@ -71,6 +71,8 @@ function playRound(playerChoice) {
         playerScore++;
     }
 
+    /*
+
     document.getElementById("table-choises").innerHTML = 
     
     `
@@ -80,6 +82,7 @@ function playRound(playerChoice) {
         </tr>
     
     `
+    */
 
     maxrounds--;
 
