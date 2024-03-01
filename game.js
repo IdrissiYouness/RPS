@@ -95,9 +95,11 @@ function playRound(playerChoice) {
             document.getElementById("result").textContent = "The game is a tie!";
         }
 
-        document.getElementById("rock-btn").disabled = true;
-        document.getElementById("paper-btn").disabled = true;
-        document.getElementById("scissors-btn").disabled = true;
+
+        document.getElementById("new-game-btn").style.visibility= "visible";
+
+    
+        
     }
 }
 
@@ -136,13 +138,14 @@ function startNewGame(){
     maxrounds = 5;
     document.getElementById("player-score").textContent = playerScore;
     document.getElementById("cpu-score").textContent = computerScore;
-    document.getElementById("table-choises").innerHTML = "";
     document.getElementById("result").textContent = "";
-    document.getElementById("rock-btn").disabled = false;
-    document.getElementById("paper-btn").disabled = false;
-    document.getElementById("scissors-btn").disabled = false;
-    document.getElementById("player-choice").textContent = "";
+    document.getElementById("new-game-btn").style.visibility= "hidden";
+
 }
+
+
+
+document.getElementById("new-game-btn").addEventListener("click", startNewGame);
 
 
 

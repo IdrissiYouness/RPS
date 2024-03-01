@@ -12,20 +12,38 @@
 </head>
 <body>
 
-     
-    <h1>Rock, Paper, Scissors Game</h1>
+     <header>
 
-    <h2>Pick your Choice!</h2>
+        <h1>
+            <span style="color: #2d001a">Rock,</span>
+            <span style="color: #d87651">Paper,</span> 
+            <span style="color: #2d001a;">Scissors </span>
+            <span style="color: #d87651;">Game</span>
+        </h1>
+
+        <h2>Pick your Choice!</h2>
+
+     </header>
+
+     <section>
     
-    <button id="rock-btn">Rock</button>
-    <button id="paper-btn">Paper</button>
-    <button id="scissors-btn">Scissors</button>
+        <!--<button id="rock-btn">Rock</button>
+        <button id="paper-btn">Paper</button>
+        <button id="scissors-btn">Scissors</button>-->
+
+        <img src="rock_ic.png" alt="rock" id="rock-btn">
+        <img src="paper_ic.png" alt="paper" id="paper-btn">
+        <img src="scissors_ic.png" alt="scissors" id="scissors-btn">
+
+     </section>
+    
+    
+    
 
 
 
 
-    <div>CPU      <span id="cpu-score">0</span> - <span id="player-score">0</span>   PLAYER</div>
-
+    <div class="scoreboard"><span id="cpu-title-score">CPU</span>  <span id="cpu-score">0</span> - <span id="player-score">0</span>   <span id="player-title-score">PLAYER</span></div>
     <div id="result"></div>
 
 
@@ -37,7 +55,7 @@
         </tr>
     </table>-->
 
-    <button onclick="startNewGame()">Try again</button>
+    <button id="new-game-btn" onclick="startNewGame()" >Try again</button>
 
 
     

@@ -4,7 +4,9 @@ button:hover {
     background-color: #ddd;
 }
 body {
-    background-color: #f0f0f1;
+    background-color: #ffa066;
+    font-family: "VT323", monospace;
+    margin: 0;
 }
 
 button {
@@ -15,8 +17,62 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin: 10px;
+    font-family: "VT323", monospace;
 }
 
 button:hover {
     background-color: #ddd;
+}
+
+
+h2 {
+
+    color: #2d001a;
+}
+
+header {
+    background-color: #ffa066;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "VT323", monospace;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffa066;
+
+    font-family: "VT323", monospace;
+}
+
+.scoreboard {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: "VT323", monospace;
+    font-size: 40px;
+    margin-left: 50px;
+    color: #2d001a;
+}
+
+#result {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#new-game-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+
+img:hover {
+    transform: scale(1.1);
 }
