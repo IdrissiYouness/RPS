@@ -64,12 +64,16 @@ section {
     justify-content: center;
 }
 
-#new-game-btn {
+
+
+#retry-btn {
     display: flex;
     justify-content: center;
     margin: auto;
-    visibility: hidden;
     margin-top: 20px;
+    visibility: hidden;
+    height: 72px;
+    width: 72px;
 }
 
 

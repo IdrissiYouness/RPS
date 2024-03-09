@@ -71,18 +71,6 @@ function playRound(playerChoice) {
         playerScore++;
     }
 
-    /*
-
-    document.getElementById("table-choises").innerHTML = 
-    
-    `
-        <tr>
-            <td>${computerChoice}</td>
-            <td id="player-choice">${playerChoice}</td>
-        </tr>
-    
-    `
-    */
 
     maxrounds--;
 
@@ -95,9 +83,9 @@ function playRound(playerChoice) {
             document.getElementById("result").textContent = "The game is a tie!";
         }
 
-
-        document.getElementById("new-game-btn").style.visibility= "visible";
-
+      
+        document.getElementById("retry-btn").style.visibility= "visible";
+        
     
         
     }
@@ -139,13 +127,13 @@ function startNewGame(){
     document.getElementById("player-score").textContent = playerScore;
     document.getElementById("cpu-score").textContent = computerScore;
     document.getElementById("result").textContent = "";
-    document.getElementById("new-game-btn").style.visibility= "hidden";
+    document.getElementById("retry-btn").style.visibility= "hidden";
 
 }
 
 
 
-document.getElementById("new-game-btn").addEventListener("click", startNewGame);
+document.getElementById("retry-btn").addEventListener("click", startNewGame);
 
 
 
